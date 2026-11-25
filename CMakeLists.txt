@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(Cutefish VERSION 1.0 LANGUAGES NONE)
+project(Proper Desktop VERSION 1.0 LANGUAGES NONE)
 
 if(DEFINED INSTALL_PREFIX AND NOT INSTALL_PREFIX STREQUAL "")
   set(CMAKE_INSTALL_PREFIX "${INSTALL_PREFIX}" CACHE PATH
@@ -13,8 +13,8 @@ endif()
 set(CMAKE_INSTALL_LIBDIR "lib" CACHE PATH "Object code libraries")
 include(GNUInstallDirs)
 
-set(CUTEFISH_THEME_NAME "Cutefish")
-set(CUTEFISH_ICON_INSTALL_DIR "${CMAKE_INSTALL_DATADIR}/icons")
+set(PROPERDESKTOP_THEME_NAME "ProperDesktop")
+set(PROPERDESKTOP_ICON_INSTALL_DIR "${CMAKE_INSTALL_DATADIR}/icons")
 
 configure_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/cmake/install-theme.cmake.in"
